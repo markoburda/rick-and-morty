@@ -54,8 +54,8 @@ const DetailedCharacter = () => {
                 <div className="DetailedCharacter__description">
                     <h1 className="DetailedCharacter__title">#{id} {name}</h1>
                     <div className="Description__tag">
-                        <Tag/>
-                        <Tag/>
+                        <Tag className="DetailedCharacter__tag">{status}</Tag>
+                        <Tag className="DetailedCharacter__tag">{gender}</Tag>
                     </div>
                     <div className="DetailedCharacter__mainInfo">
                         <TextField label="Species:" className="DetailedCharacter__textField">

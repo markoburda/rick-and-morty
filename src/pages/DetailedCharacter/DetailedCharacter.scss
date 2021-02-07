@@ -1,9 +1,15 @@
 .DetailedCharacter{
   background: var(--text-dark);
+  padding: 0 120px;
+  height: 100vh;
 
   &__container{
     display: flex;
-    height: 100vh;
+    position: relative;
+    top: 63px;
+    background: #2A2A42;
+    border-radius: 12px;
+    padding: 40px;
   }
 
   &__textBox{
@@ -12,13 +18,15 @@
 
   &__imageContainer{
     //display: flex;
-    margin: 40px;
+    margin: 0 40px;
     vertical-align: top;
     border-radius: 12px;
   }
 
   &__image{
     background: #0A0A28;
+    width: 282px;
+    height: 282px;
   }
 
   &__infoLabel{
@@ -35,12 +43,17 @@
     }
 
   &__links{
+    position: absolute;
     margin: 24px 0;
   }
 
   &__link{
+    color: var(--cta);
+    margin-right: 20px;
+
     &_active{
-      color: var(--cta)
+      color: white;
+      opacity: 50%;
     }
   }
 
@@ -56,5 +69,6 @@
 .Description{
   &__tag{
     display: flex;
+    margin-bottom: 40px;
   }
 }

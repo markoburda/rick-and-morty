@@ -23,8 +23,8 @@ const Hero = ({ name, setName, gender, setGender, status, setStatus }) => {
                 <span>surf the</span>
                 <Logo className="Hero__logo"/>
                 <span>universe</span>
-                <Search className='Hero__search' setValue={setName} value={name}/>
             </h1>
+            <Search className='Hero__search' setValue={setName} value={name}/>
 
             <div className="Hero__filters">
                 <Select value={status} handleSelect={setStatus} options={statusOptions} label="Status"/>
