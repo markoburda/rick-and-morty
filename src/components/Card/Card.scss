@@ -1,0 +1,30 @@
+.Card{
+  width: 282px;
+  height: 502px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  margin: 12px;
+
+  &__image{
+    width: 100%;
+  }
+
+  &__info{
+    text-align: left;
+    padding: 24px 16px;
+  }
+
+  &__name{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Roboto, serif;
+  }
+
+  &__tags{
+    display: flex;
+    justify-content: left;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}

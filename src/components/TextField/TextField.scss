@@ -1,0 +1,13 @@
+.TextField{
+  &__label{
+    font-weight: 700;
+    color: var(--dark-gray);
+    opacity: 50%;
+    font-size: 13px;
+  }
+
+  &__value{
+    color: white;
+    font-size: 15px;
+  }
+}
