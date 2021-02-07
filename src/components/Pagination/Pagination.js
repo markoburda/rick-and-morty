@@ -1,5 +1,5 @@
 import _ from "lodash";
-import {ReactComponent as Arrow} from "../assets/icons/arrow.svg";
+import {ReactComponent as Arrow} from "../../assets/icons/arrow.svg";
 import './Pagination.scss';
 
 const Pagination = ({pages, setCurPage, curPage}) => {

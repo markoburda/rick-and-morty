@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/warnings",
+    "plugin:import/errors"
+  ],
+
+  "plugins": ["react", "import"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    "import/order": 1,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 2,
+    "react/default-props-match-prop-types": 1
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  }
+}

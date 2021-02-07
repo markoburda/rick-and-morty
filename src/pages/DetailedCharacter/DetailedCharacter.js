@@ -36,57 +36,55 @@ const DetailedCharacter = () => {
         error,
     } = character || {};
 
-    // const renderEpisode = ({id, name, episode }) => (
-    //     <div key={id} className="DetailedUser__episode">
-    //         <span className="DetailedUser__number">{episode}:</span> {name}
-    //     </div>
-    // );
-
     return character ? (
-        <div className="DetailedUser">
-            <div className="DetailedUser__links">
-                <NavLink exact to="/" className="DetailedUser__link" activeClassName="DetailedUser__link_active">
+        <div className="DetailedCharacter">
+            <div className="DetailedCharacter__links">
+                <NavLink exact to="/" className="DetailedCharacter__link" activeClassName="DetailedCharacter__link_active">
                     Home
                 </NavLink>
-                <NavLink exact to="/character" className="DetailedUser__link" activeClassName="DetailedUser__link_active">
+                <NavLink exact to="/character" className="DetailedCharacter__link" activeClassName="DetailedCharacter__link_active">
                     #{id} {name}
                 </NavLink>
             </div>
-            <div className="DetailedUser__imageContainer">
-                <img src={image} alt=""/>
-            </div>
-            <div className="DetailedUser__description">
-                <h1>#{id} {name}</h1>
-                <div className="Description__tag">
-                    <Tag/>
-                    <Tag/>
+            <div className="DetailedCharacter__container">
+                <div className="DetailedCharacter__imageContainer">
+                    <img src={image} alt=""/>
                 </div>
-                <div className="DetailedUser__mainInfo">
-                    <TextField label="Species:" className="DetailedUser__textField">
-                        {species}
-                    </TextField>
-                    <TextField label="Origin:" className="DetailedUser__textField">
-                        {origin?.name}
-                    </TextField>
-                    <TextField label="Birthday:" className="DetailedUser__textField">
-                        {created}
-                    </TextField>
-                    <TextField label="Last known location:" className="DetailedUser__textField">
-                        {location?.name}
-                    </TextField>
+                <div className="DetailedCharacter__textBox">
+                <div className="DetailedCharacter__description">
+                    <h1 className="DetailedCharacter__title">#{id} {name}</h1>
+                    <div className="Description__tag">
+                        <Tag/>
+                        <Tag/>
+                    </div>
+                    <div className="DetailedCharacter__mainInfo">
+                        <TextField label="Species:" className="DetailedCharacter__textField">
+                            {species}
+                        </TextField>
+                        <TextField label="Origin:" className="DetailedCharacter__textField">
+                            {origin?.name}
+                        </TextField>
+                        <TextField label="Birthday:" className="DetailedCharacter__textField">
+                            {created}
+                        </TextField>
+                        <TextField label="Last known location:" className="DetailedCharacter__textField">
+                            {location?.name}
+                        </TextField>
 
-                    {/*<TextField label="First seen in:" className="DetailedUser__textField">*/}
-                    {/*    {episodes?.[0]?.name}*/}
-                    {/*</TextField>*/}
+                        {/*<TextField label="First seen in:" className="DetailedCharacter__textField">*/}
+                        {/*    {episodes?.[0]?.name}*/}
+                        {/*</TextField>*/}
+                    </div>
+                    <div className="DetailedCharacter__episodes">
+                        {/*<TextField label="Episodes:" className="DetailedCharacter__textField">*/}
+                        {/*    {episodes?.map(renderEpisode)}*/}
+                        {/*</TextField>*/}
+                    </div>
                 </div>
-                <div className="DetailedUser__episodes">
-                    {/*<TextField label="Episodes:" className="DetailedUser__textField">*/}
-                    {/*    {episodes?.map(renderEpisode)}*/}
-                    {/*</TextField>*/}
-                </div>
+            </div>
         </div>
     </div>
-    ) : <div className="DetailedUser"> Character not found. We're sorry :(</div>
+    ) : <div className="DetailedCharacter"> Character not found. We're sorry :(</div>
 };
 
 export default DetailedCharacter;

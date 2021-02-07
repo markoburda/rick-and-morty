@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import Card from "../Card";
-import Pagination from "../../Pagination";
+import Pagination from "../Pagination";
 import {getCharacters} from "../../api";
 import './UserList.scss'
 

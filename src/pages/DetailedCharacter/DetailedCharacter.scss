@@ -1,9 +1,19 @@
-.DetailedUser{
-  &__imageContainer{
+.DetailedCharacter{
+  background: var(--text-dark);
+
+  &__container{
     display: flex;
-    margin: 195px 48px 0 120px;
+    height: 100vh;
+  }
+
+  &__textBox{
+    display: flex;
+  }
+
+  &__imageContainer{
+    //display: flex;
+    margin: 40px;
     vertical-align: top;
-    // TODO
     border-radius: 12px;
   }
 
@@ -21,17 +31,30 @@
   }
 
   &__mainInfo {
-      //display: inline-block;
       margin-right: 48px;
     }
 
-  &__episodes{
-    //display: inline-block;
+  &__links{
+    margin: 24px 0;
   }
 
   &__link{
     &_active{
       color: var(--cta)
     }
+  }
+
+  &__title{
+    color: white;
+  }
+
+  &__textField{
+    margin-bottom: 16px;
+  }
+}
+
+.Description{
+  &__tag{
+    display: flex;
   }
 }
