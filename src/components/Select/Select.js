@@ -9,6 +9,8 @@ const Select = ({value, handleSelect, options, label}) => {
         handleSelect(option.value);
         setIsOpened(false);
     };
+
+    // TODO: no arrow functions in render or in functions that return some parts of component
     const renderOption = (option) => <li key={option.value} value={option.value} className="Select__option" onClick={() => onOptionClick(option)}> {option.label} </li>;
     const selectedOption = options?.find(option => option.value === value);
 

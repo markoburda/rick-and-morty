@@ -3,6 +3,8 @@ import {ReactComponent as Arrow} from "../../assets/icons/arrow.svg";
 import './Pagination.scss';
 
 const Pagination = ({pages, setCurPage, curPage}) => {
+
+    // TODO: clean up code from unused parts
     const setPagesArray = _(Array(pages))
         .fill(null)
         .map((el, ind) => ind)
@@ -33,6 +35,7 @@ const Pagination = ({pages, setCurPage, curPage}) => {
     const renderArrow = (isNext = false) => {
         const nextPage = isNext ? curPage + 1 : curPage - 1;
         const isArrowClickable = (!isNext && nextPage >= 0) || (isNext && nextPage < pages);
+        // TODO: prettify code (max length of a line)
         return (
             <div className="Pagination__page" onClick={handleClick(nextPage, isArrowClickable)}>
                 <Arrow

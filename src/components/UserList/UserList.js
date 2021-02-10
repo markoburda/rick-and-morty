@@ -9,6 +9,7 @@ const UserList = ({status, gender, name}) => {
     const [characters, setCharacters] = useState();
     const [pages, setPages] = useState(0);
 
+    // TODO: unused
     const [isLoading, setIsLoading] = useState(false);
 
     const loadCharacters = async (page = 0, params) => {
