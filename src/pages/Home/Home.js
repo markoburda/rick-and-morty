@@ -5,6 +5,8 @@ import UserList from "../../components/UserList";
 import Hero from "../../components/Hero";
 import './Home.scss';
 
+// TODO: imports not cleaned
+
 function Home() {
     const [name, setName] = useState("");
     const [queryName, setQueryName] =  useState("");

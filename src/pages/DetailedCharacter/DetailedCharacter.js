@@ -20,6 +20,7 @@ const DetailedCharacter = () => {
         if (item.error) {
             console.log(item.error);
         } else {
+            // TODO: no logs to console
             console.log(item);
             setCharacter(item);
         }};
@@ -70,7 +71,7 @@ const DetailedCharacter = () => {
                         <TextField label="Last known location:" className="DetailedCharacter__textField">
                             {location?.name}
                         </TextField>
-
+                        {/* TODO: no commented code in component */}
                         {/*<TextField label="First seen in:" className="DetailedCharacter__textField">*/}
                         {/*    {episodes?.[0]?.name}*/}
                         {/*</TextField>*/}

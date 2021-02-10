@@ -3,6 +3,7 @@ import Select from "../Select";
 import Search from "../Search";
 import {ReactComponent as Logo} from "../../assets/icons/logo.svg";
 import { useState, useEffect } from "react";
+// TODO: unused import
 
 const statusOptions = [
     { value: "", label: "All" },
@@ -33,5 +34,7 @@ const Hero = ({ name, setName, gender, setGender, status, setStatus }) => {
         </div>
     )
 };
+
+// TODO: PropTypes
 
 export default Hero;

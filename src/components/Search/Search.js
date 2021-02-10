@@ -1,5 +1,7 @@
 import "./Search.scss";
 
+// TODO: prettify code - objects should have offsets inside { className, value, setValue }
+// eslint can help with fixing it
 const Search = ( {className, value, setValue} ) => {
 
     const handleChange = ({target: {value}}) => {

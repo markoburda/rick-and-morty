@@ -4,9 +4,12 @@ import Tag from "../../components/Tag";
 import TextField from "../TextField";
 import './Card.scss';
 
+// TODO: remove unused props
 const Card = ({id, name, status, species, type, gender, origin, location, image, episode}) => {
     const history = useHistory();
 
+    // TODO: if you use <Link /> you don't need this func then
+    // only one approach should be, either history push or <Link />
     const handleClick = () => history.push(`/character/${id}`);
 
     return <div className="Card">
@@ -17,7 +20,7 @@ const Card = ({id, name, status, species, type, gender, origin, location, image,
         </Link>
         <div className="Card__info">
             <Link to={`/character/${id}`}>
-                <header onClick={handleClick} className="Card__name"> {name} </header>
+                <header className="Card__name"> {name} </header>
             </Link>
             <div className="Card__tags">
                 <Tag className="Card__tag">{gender}</Tag>
