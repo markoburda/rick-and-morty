@@ -1,9 +1,9 @@
-.Pagination{
+.Pagination {
   display: flex;
   justify-content: center;
   margin: 32px 0;
 
-  &__page{
+  &__page {
     cursor: pointer;
     width: 32px;
     height: 32px;
@@ -14,21 +14,21 @@
     align-items: center;
     color: var(--text-light);
     margin-right: 8px;
-    &:last-of-type{
+    &:last-of-type {
       margin-right: 0;
     }
-    &_active{
+    &_active {
       background: var(--text-light);
       color: var(--text-dark);
     }
   }
 
-  &__arrow{
+  &__arrow {
     opacity: 0.3;
     &_next {
       transform: rotateY(180deg);
     }
-    &_active{
+    &_active {
       opacity: 1;
     }
   }
