@@ -1,10 +1,9 @@
-.Hero{
-
+.Hero {
   &__search {
     font-size: 24px;
   }
 
-  &__heading{
+  &__heading {
     padding: 80px 247px 0 247px;
     justify-content: center;
     align-items: center;
@@ -12,14 +11,14 @@
     font-size: 56px;
   }
 
-  &__filters{
+  &__filters {
     display: flex;
     justify-content: center;
     text-align: left;
     margin-top: 40px;
   }
 
-  &__logo{
+  &__logo {
     width: 438px;
     height: 129px;
   }

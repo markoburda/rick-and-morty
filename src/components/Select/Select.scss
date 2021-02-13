@@ -1,16 +1,16 @@
-.Select{
-    padding: 17px 24px;
-    background: #F3F7FD;
-    border-radius: 8px;
-    width: 260px;
-    margin-bottom: 64px;
-    position: relative;
+.Select {
+  padding: 17px 24px;
+  background: #f3f7fd;
+  border-radius: 8px;
+  width: 260px;
+  margin-bottom: 64px;
+  position: relative;
 
-    &:first-child {
-      margin-right: 40px;
-    }
+  &:first-child {
+    margin-right: 40px;
+  }
 
-  &__options{
+  &__options {
     position: absolute;
     top: 100%;
     left: 0;
@@ -20,20 +20,20 @@
     margin: 0;
   }
 
-  &__option{
+  &__option {
     list-style-type: none;
     height: 50px;
     line-height: 50px;
     padding: 0 8px;
-    &:hover{
+    &:hover {
       background: var(--cta);
     }
   }
 
-  &__selectedOption{
+  &__selectedOption {
     position: relative;
 
-    &::after{
+    &::after {
       display: block;
       width: 12px;
       height: 6px;
@@ -45,11 +45,11 @@
     }
   }
 
-  &__label{
+  &__label {
     color: var(--cta);
   }
 
-  &__value{
+  &__value {
     margin-left: 8px;
     color: var(--text-dark);
   }
