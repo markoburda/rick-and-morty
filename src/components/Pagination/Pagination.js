@@ -59,7 +59,7 @@ const Pagination = ({ pages, setCurPage, curPage }) => {
   );
 };
 
-Pagination.PropTypes = {
+Pagination.propTypes = {
   pages: PropTypes.string.isRequired,
   setCurPage: PropTypes.func.isRequired,
   curPage: PropTypes.number.isRequired,

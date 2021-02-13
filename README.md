@@ -30,10 +30,11 @@ Links now redirect as intended
 Fixed some styling on Detailed Character page\
 Fixed some scaling issues on smaller screens\
 Fixed web site crashing when typing in the search field while on Detailed Character page\
-Added some more PropTypes\
 Added error message if no matching characters returned\
-Episodes are now being fetched and displayed on Detailed Character page
-Removed annoying text selection on Pagination
+Episodes are now being fetched and displayed on Detailed Character page\
+Removed annoying text selection on Pagination\
+Removed some more unused code snippets\
+Added all missing PropTypes
 
 ### 0.0.4
 

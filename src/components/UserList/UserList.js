@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { getCharacters } from "../../api";
 import Card from "../Card";
 import Pagination from "../Pagination";
-import { getCharacters } from "../../api";
 import "./UserList.scss";
 
 const UserList = ({ status, gender, name }) => {
@@ -9,12 +10,8 @@ const UserList = ({ status, gender, name }) => {
   const [characters, setCharacters] = useState();
   const [pages, setPages] = useState(0);
 
-  const [isLoading, setIsLoading] = useState(false);
-
   const loadCharacters = async (page = 0, params) => {
-    setIsLoading(true);
     const items = await getCharacters({ page: page + 1, ...params });
-    setIsLoading(false);
     setCharacters(items?.results);
     setPages(items?.info?.pages || 0);
   };
@@ -47,6 +44,12 @@ const UserList = ({ status, gender, name }) => {
   ) : (
     <h1>No characters found.</h1>
   );
+};
+
+UserList.propTypes = {
+  status: PropTypes.string.isRequired,
+  gender: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default UserList;
