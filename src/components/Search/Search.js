@@ -1,5 +1,6 @@
-import "./Search.scss";
+import PropTypes from "prop-types";
 import SearchIcon from "../../assets/icons/search.png";
+import "./Search.scss";
 
 const Search = ({ className, value, setValue }) => {
   const handleChange = ({ target: { value } }) => {
@@ -19,6 +20,12 @@ const Search = ({ className, value, setValue }) => {
       <button className="Search__button">Find Character</button>
     </div>
   );
+};
+
+Search.propTypes = {
+  className: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  setValue: PropTypes.func.isRequired,
 };
 
 export default Search;

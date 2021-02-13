@@ -17,6 +17,10 @@
     align-items: center;
     margin: 0 48px;
     font-size: 56px;
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   &__filters {
@@ -27,7 +31,7 @@
   }
 
   &__logo {
-    width: 438px;
+    min-width: 438px;
     height: 129px;
     margin: 0 48px;
   }

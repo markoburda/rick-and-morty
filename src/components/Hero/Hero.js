@@ -1,10 +1,8 @@
 import "./Hero.scss";
-import { useEffect, useState } from "react";
 import { PropTypes } from "prop-types";
 import Select from "../Select";
 import Search from "../Search";
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
-import Card from "../Card";
 
 const statusOptions = [
   { value: "", label: "All" },
