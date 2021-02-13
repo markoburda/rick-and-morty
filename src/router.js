@@ -6,15 +6,27 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 
 const Router = () => {
+  const [name, setName] = useState("");
+  const [queryName, setQueryName] = useState("");
+
+  const delayedQuery = useCallback(_.debounce(setQueryName, 1000), [
+    setQueryName,
+  ]);
+
+  const onNameChange = (value) => {
+    setName(value);
+    delayedQuery(value);
+  };
+
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/search">
-          <Home />
+          <Home name={name} onNameChange={onNameChange} queryName={queryName} />
         </Route>
         <Route exact path="*">
           <div>
-            <Header />
+            <Header name={name} setValue={setName} />
             <Switch>
               <Route exact path="/character/:id">
                 <DetailedCharacter />

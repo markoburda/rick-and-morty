@@ -23,7 +23,10 @@ Active links now change their style
 Links now redirect as intended
 
 Fixed some styling on Detailed Character page\
-Fixed some scaling issues on smaller screens
+Fixed some scaling issues on smaller screens\
+Fixed web site crashing when typing in the search field while on Detailed Character page\
+Added some more PropTypes\
+Added error message if no matching characters returned
 
 ### 0.0.4
 

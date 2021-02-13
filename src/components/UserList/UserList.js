@@ -35,7 +35,7 @@ const UserList = ({ status, gender, name }) => {
     <Card key={character.id} {...character} />
   );
 
-  return (
+  return characters ? (
     <div className="UserList">
       <div className="UserList__users">{characters?.map(renderCharacter)}</div>
       <Pagination
@@ -44,6 +44,8 @@ const UserList = ({ status, gender, name }) => {
         curPage={currentPage}
       />
     </div>
+  ) : (
+    <h1>No characters found.</h1>
   );
 };
 

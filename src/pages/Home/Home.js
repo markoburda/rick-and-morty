@@ -1,23 +1,12 @@
-import { useCallback, useState } from "react";
-import _ from "lodash";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import UserList from "../../components/UserList";
 import Hero from "../../components/Hero";
 import "./Home.scss";
 
-function Home() {
-  const [name, setName] = useState("");
-  const [queryName, setQueryName] = useState("");
+function Home({ name, queryName, onNameChange }) {
   const [gender, setGender] = useState("");
   const [status, setStatus] = useState("");
-
-  const delayedQuery = useCallback(_.debounce(setQueryName, 1000), [
-    setQueryName,
-  ]);
-
-  const onNameChange = (value) => {
-    setName(value);
-    delayedQuery(value);
-  };
 
   return (
     <div className="Home">
@@ -33,5 +22,11 @@ function Home() {
     </div>
   );
 }
+
+Home.propTypes = {
+  name: PropTypes.string.isRequired,
+  queryName: PropTypes.string.isRequired,
+  onNameChange: PropTypes.func.isRequired,
+};
 
 export default Home;
