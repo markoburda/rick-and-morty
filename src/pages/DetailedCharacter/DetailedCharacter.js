@@ -1,8 +1,8 @@
 import { NavLink, useParams } from "react-router-dom";
 
+import { useEffect, useState } from "react";
 import TextField from "../../components/TextField";
 import Tag from "../../components/Tag";
-import { useEffect, useState } from "react";
 import { getCharacter } from "../../api";
 
 import "./DetailedCharacter.scss";
