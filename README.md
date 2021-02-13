@@ -35,21 +35,15 @@ Fixed TODOs:
     consts.js:
         moved SERVER_URL variable to .env
 
-Added date and time formatting in Detailed Character page
+Added date and time formatting in Detailed Character page\
 Fixed issue with home page displaying only one card per row"
 
 ### 0.0.2
 
-Changed ESLint to give warnings instead of errors on non-critical events
-
-Moved API URL to an environment variable
-
-Fixed pre-commit hook in Husky
-
-Fixed ESLint code errors
-
-Added checks for import order and console.log() presence
-
-Removed unused files
-
+Changed ESLint to give warnings instead of errors on non-critical events\
+Moved API URL to an environment variable\
+Fixed pre-commit hook in Husky\
+Fixed ESLint code errors\
+Added checks for import order and console.log() presence\
+Removed unused files\
 Updated page name, description and icon
