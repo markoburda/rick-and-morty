@@ -9,3 +9,7 @@ Fixed pre-commit hook in Husky
 Fixed ESLint code errors
 
 Added checks for import order and console.log() presence
+
+Removed unused files
+
+Updated page name, description and icon
