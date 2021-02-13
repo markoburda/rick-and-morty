@@ -1,11 +1,11 @@
 import { NavLink, useParams } from "react-router-dom";
 
+import "./DetailedCharacter.scss";
 import { useEffect, useState } from "react";
 import TextField from "../../components/TextField";
 import Tag from "../../components/Tag";
-import { getCharacter } from "../../api";
 
-import "./DetailedCharacter.scss";
+import { getCharacter } from "../../api";
 
 const DetailedCharacter = () => {
   const { id } = useParams();

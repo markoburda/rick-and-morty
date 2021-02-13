@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Card from "../Card";
 import Pagination from "../Pagination";
 import { getCharacters } from "../../api";

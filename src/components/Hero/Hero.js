@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { PropTypes } from "prop-types";
 import Select from "../Select";
 import Search from "../Search";

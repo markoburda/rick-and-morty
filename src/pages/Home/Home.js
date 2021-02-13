@@ -1,8 +1,8 @@
+import { useCallback, useEffect, useState } from "react";
 import _ from "lodash";
-import { useState, useEffect, useCallback } from "react";
-import { getCharacters } from "../../api";
 import UserList from "../../components/UserList";
 import Hero from "../../components/Hero";
+import { getCharacters } from "../../api";
 import "./Home.scss";
 
 function Home() {
