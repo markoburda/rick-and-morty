@@ -13,3 +13,8 @@ export const getCharacter = async (id) => {
   );
   return response.json();
 };
+
+export const getEpisodes = async () => {
+  const response = await fetch(`${process.env.REACT_APP_API_URL}/episode`);
+  return response.json();
+};

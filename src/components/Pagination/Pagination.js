@@ -4,14 +4,8 @@ import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 import "./Pagination.scss";
 
 const Pagination = ({ pages, setCurPage, curPage }) => {
-  // TODO remove unused const
-  const setPagesArray = _(Array(pages))
-    .fill(null)
-    .map((el, ind) => ind)
-    .value();
-
   const getDisplayedPages = () => {
-    if (curPage - 2 <= 0) return _.range(0, Math.min(5, pages));
+    if (curPage - 2 <= 0) return _.range(-1, Math.min(5, pages));
     if (curPage + 2 >= pages) return _.range(Math.max(pages - 5, 0), pages);
     const minPage = Math.max(curPage - 2);
     const maxPage = Math.min(minPage + 4, pages);
