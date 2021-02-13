@@ -1,14 +1,12 @@
 .UserList {
   background: var(--text-dark);
-  //width: calc(100vw - 240px);
-  display: flex;
-  // TODO
-  flex-direction: column;
 
   &__users {
-    justify-content: center;
+    display: flex;
+    //justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 960px;
+    max-width: 1224px;
+    min-width: 282px;
   }
 }

@@ -1,8 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import _ from "lodash";
 import UserList from "../../components/UserList";
 import Hero from "../../components/Hero";
-import { getCharacters } from "../../api";
 import "./Home.scss";
 
 function Home() {
@@ -23,7 +22,7 @@ function Home() {
   return (
     <div className="Home">
       <Hero
-        characterName={name}
+        name={name}
         setName={onNameChange}
         gender={gender}
         setGender={setGender}

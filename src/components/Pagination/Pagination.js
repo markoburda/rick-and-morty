@@ -4,6 +4,7 @@ import { ReactComponent as Arrow } from "../../assets/icons/arrow.svg";
 import "./Pagination.scss";
 
 const Pagination = ({ pages, setCurPage, curPage }) => {
+  // TODO remove unused const
   const setPagesArray = _(Array(pages))
     .fill(null)
     .map((el, ind) => ind)
