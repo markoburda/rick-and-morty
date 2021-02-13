@@ -23,7 +23,8 @@ You will also see any lint errors in the console.
 
 ### 0.0.5
 
-#####Fixed Breadcrumb navigation:
+##### Fixed Breadcrumb navigation:
+
 Active links now change their style
 Links now redirect as intended
 
