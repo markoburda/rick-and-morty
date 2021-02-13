@@ -17,8 +17,8 @@ Fixed TODOs:
     consts.js:
         moved SERVER_URL variable to .env
 
-
 Added date and time formatting in Detailed Character page
+Fixed issue with home page displaying only one card per row"
 
 ### 0.0.2
 
