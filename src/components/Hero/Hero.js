@@ -3,6 +3,8 @@ import Select from "../Select";
 import Search from "../Search";
 import {ReactComponent as Logo} from "../../assets/icons/logo.svg";
 import { useState, useEffect } from "react";
+import {PropTypes} from "prop-types";
+import Card from "../Card";
 
 const statusOptions = [
     { value: "", label: "All" },
@@ -32,6 +34,15 @@ const Hero = ({ name, setName, gender, setGender, status, setStatus }) => {
             </div>
         </div>
     )
+};
+
+Hero.propTypes = {
+    name: PropTypes.string.isRequired,
+    setName: PropTypes.func.isRequired,
+    gender: PropTypes.string.isRequired,
+    setGender: PropTypes.func.isRequired,
+    status: PropTypes.string.isRequired,
+    setStatus: PropTypes.func.isRequired
 };
 
 export default Hero;

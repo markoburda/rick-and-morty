@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { PropTypes } from 'prop-types';
 import {ReactComponent as Arrow} from "../../assets/icons/arrow.svg";
 import './Pagination.scss';
 
@@ -48,6 +49,12 @@ const Pagination = ({pages, setCurPage, curPage}) => {
             {renderArrow(true)}
         </div>
     )
+};
+
+Pagination.PropTypes = {
+    pages: PropTypes.string.isRequired,
+    setCurPage: PropTypes.func.isRequired,
+    curPage: PropTypes.number.isRequired
 };
 
 export default Pagination;

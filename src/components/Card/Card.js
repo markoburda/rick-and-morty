@@ -1,10 +1,10 @@
 import { Link, useHistory } from "react-router-dom";
-import {PropTypes } from 'prop-types';
+import { PropTypes } from 'prop-types';
 import Tag from "../../components/Tag";
 import TextField from "../TextField";
 import './Card.scss';
 
-const Card = ({id, name, status, species, type, gender, origin, location, image, episode}) => {
+const Card = ({id, name, status, gender, location, image}) => {
     const history = useHistory();
 
     const handleClick = () => history.push(`/character/${id}`);
@@ -36,6 +36,7 @@ Card.propTypes = {
     gender: PropTypes.oneOf(['Male', 'Female', 'Unknown', 'Genderless']),
     location: PropTypes.shape({
         url: PropTypes.string.isRequired,
+        name: PropTypes.string,
         fontSize: PropTypes.number.isRequired
     }),
     origin: PropTypes.shape({

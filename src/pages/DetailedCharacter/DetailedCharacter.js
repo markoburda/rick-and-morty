@@ -84,7 +84,7 @@ const DetailedCharacter = () => {
             </div>
         </div>
     </div>
-    ) : <div className="DetailedCharacter"> Character not found. We're sorry :(</div>
+    ) : <div className="DetailedCharacter"> Character not found.</div>
 };
 
 export default DetailedCharacter;
