@@ -1,9 +1,9 @@
 .UserList {
   background: var(--text-dark);
+  padding: 80px 120px;
 
   &__users {
     display: flex;
-    //justify-content: center;
     flex-wrap: wrap;
     margin: auto;
     max-width: 1224px;

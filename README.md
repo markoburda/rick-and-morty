@@ -16,6 +16,15 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+### 0.0.4
+
+Fixed chevron icon in Select menu clipping into select div\
+Centered "surf the Rick and Morty universe" text in home page\
+Fixed home page padding and margin problems\
+Added search icon to search field\
+Fixed search field positioning\
+Removed default outlines and borders
+
 ### 0.0.3
 
 Fixed TODOs:

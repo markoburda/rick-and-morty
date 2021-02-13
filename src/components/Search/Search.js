@@ -1,4 +1,5 @@
 import "./Search.scss";
+import SearchIcon from "../../assets/icons/search.png";
 
 const Search = ({ className, value, setValue }) => {
   const handleChange = ({ target: { value } }) => {
@@ -7,6 +8,7 @@ const Search = ({ className, value, setValue }) => {
 
   return (
     <div className={`Search ${className}`}>
+      <img src={SearchIcon} className="Search__icon" />
       <input
         className="Search__input"
         type="text"
