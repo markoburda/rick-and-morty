@@ -29,7 +29,8 @@
         "memberSyntaxSortOrder": ["multiple", "single", "none", "all"],
         "allowSeparatedGroups": true
       }
-    ]
+    ],
+    "no-console": 2
   },
   "env": {
     "es6": true,

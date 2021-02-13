@@ -17,12 +17,7 @@ const DetailedCharacter = () => {
 
   const loadCharacter = async (id) => {
     const item = await getCharacter(id);
-    if (item.error) {
-      console.log(item.error);
-    } else {
-      console.log(item);
-      setCharacter(item);
-    }
+    setCharacter(item);
   };
 
   const {
