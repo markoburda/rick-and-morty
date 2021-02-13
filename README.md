@@ -16,6 +16,15 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+### 0.0.5
+
+#####Fixed Breadcrumb navigation:
+Active links now change their style
+Links now redirect as intended
+
+Fixed some styling on Detailed Character page\
+Fixed some scaling issues on smaller screens
+
 ### 0.0.4
 
 Fixed chevron icon in Select menu clipping into select div\

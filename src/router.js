@@ -1,4 +1,6 @@
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { useCallback, useState } from "react";
+import _ from "lodash";
 import DetailedCharacter from "./pages/DetailedCharacter/DetailedCharacter";
 import Header from "./components/Header";
 import Home from "./pages/Home";

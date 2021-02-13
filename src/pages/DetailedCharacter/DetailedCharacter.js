@@ -20,17 +20,8 @@ const DetailedCharacter = () => {
     setCharacter(item);
   };
 
-  const {
-    name,
-    status,
-    species,
-    gender,
-    origin,
-    location,
-    image,
-    created,
-    error,
-  } = character || {};
+  const { name, status, species, gender, origin, location, image, created } =
+    character || {};
 
   return character ? (
     <div className="DetailedCharacter">
@@ -45,22 +36,22 @@ const DetailedCharacter = () => {
         </NavLink>
         <NavLink
           exact
-          to="/character"
+          to={`/character/${id}`}
           className="DetailedCharacter__link"
           activeClassName="DetailedCharacter__link_active"
         >
-          #{id} {name}
+          | #{id} {name}
         </NavLink>
       </div>
       <div className="DetailedCharacter__container">
         <div className="DetailedCharacter__imageContainer">
-          <img src={image} alt="" />
+          <img src={image} alt="" className="DetailedCharacter__image" />
         </div>
         <div className="DetailedCharacter__textBox">
           <div className="DetailedCharacter__description">
-            <h1 className="DetailedCharacter__title">
+            <div className="DetailedCharacter__title">
               #{id} {name}
-            </h1>
+            </div>
             <div className="Description__tag">
               <Tag className="DetailedCharacter__tag">{status}</Tag>
               <Tag className="DetailedCharacter__tag">{gender}</Tag>
@@ -82,7 +73,6 @@ const DetailedCharacter = () => {
                 label="Birthday:"
                 className="DetailedCharacter__textField"
               >
-                {/*{created}*/}
                 {Moment(created).format("DD-MM-YYYY hh:mm:ss")}
               </TextField>
               <TextField

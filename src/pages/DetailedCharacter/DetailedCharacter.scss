@@ -9,7 +9,7 @@
     top: 63px;
     background: #2a2a42;
     border-radius: 12px;
-    padding: 40px;
+    padding-top: 40px;
   }
 
   &__textBox {
@@ -17,16 +17,15 @@
   }
 
   &__imageContainer {
-    //display: flex;
     margin: 0 40px;
     vertical-align: top;
-    border-radius: 12px;
   }
 
   &__image {
     background: #0a0a28;
     width: 282px;
     height: 282px;
+    border-radius: 12px;
   }
 
   &__infoLabel {
@@ -50,6 +49,7 @@
   &__link {
     color: var(--cta);
     margin-right: 20px;
+    text-decoration: none;
 
     &_active {
       color: white;
@@ -59,6 +59,8 @@
 
   &__title {
     color: white;
+    font-size: 56px;
+    font-weight: 700;
   }
 
   &__textField {
@@ -69,6 +71,13 @@
 .Description {
   &__tag {
     display: flex;
-    margin-bottom: 40px;
+    margin: 16px 0 40px 0;
   }
+}
+
+.Header__search {
+  margin: 32px 0;
+  box-shadow: 0 -2px 24px 0 #e5e5e5;
+  width: 560px;
+  height: 56px;
 }
