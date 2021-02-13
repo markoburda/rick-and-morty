@@ -1,10 +1,10 @@
 import { NavLink, useParams } from "react-router-dom";
-
 import "./DetailedCharacter.scss";
+
 import { useEffect, useState } from "react";
+import Moment from "moment";
 import TextField from "../../components/TextField";
 import Tag from "../../components/Tag";
-
 import { getCharacter } from "../../api";
 
 const DetailedCharacter = () => {
@@ -82,7 +82,8 @@ const DetailedCharacter = () => {
                 label="Birthday:"
                 className="DetailedCharacter__textField"
               >
-                {created}
+                {/*{created}*/}
+                {Moment(created).format("DD-MM-YYYY hh:mm:ss")}
               </TextField>
               <TextField
                 label="Last known location:"

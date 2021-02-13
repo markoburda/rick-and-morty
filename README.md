@@ -1,8 +1,8 @@
-# Getting Started with Create React Home
+# Rick and Morty Universe Web Page Project
 
 This project was bootstrapped with [Create React Home](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Commands
 
 In the project directory, you can run:
 
@@ -14,57 +14,45 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+# Changelog
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 0.0.4
 
-### `yarn build`
+Fixed chevron icon in Select menu clipping into select div\
+Centered "surf the Rick and Morty universe" text in home page\
+Fixed home page padding and margin problems\
+Added search icon to search field\
+Fixed search field positioning\
+Removed default outlines and borders
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 0.0.3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Fixed TODOs:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Card.js:
+        Removed unused props
+        Removed history
+    Hero.js:
+        Removed unused imports
+        Added PropTypes
+    Pagination.js:
+        Prettified code
+    DetailedCharacter.js:
+        Removed console.log() statements
+    Home.js:
+        Cleaned up imports
+    consts.js:
+        moved SERVER_URL variable to .env
 
-### `yarn eject`
+Added date and time formatting in Detailed Character page\
+Fixed issue with home page displaying only one card per row"
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 0.0.2
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React Home documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web Home
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Changed ESLint to give warnings instead of errors on non-critical events\
+Moved API URL to an environment variable\
+Fixed pre-commit hook in Husky\
+Fixed ESLint code errors\
+Added checks for import order and console.log() presence\
+Removed unused files\
+Updated page name, description and icon

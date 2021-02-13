@@ -1,14 +1,10 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import Tag from "../../components/Tag";
 import TextField from "../TextField";
 import "./Card.scss";
 
 const Card = ({ id, name, status, gender, location, image }) => {
-  const history = useHistory();
-
-  const handleClick = () => history.push(`/character/${id}`);
-
   return (
     <div className="Card">
       <Link to={`/character/${id}`}>
@@ -17,11 +13,8 @@ const Card = ({ id, name, status, gender, location, image }) => {
         </div>
       </Link>
       <div className="Card__info">
-        <Link to={`/character/${id}`}>
-          <header onClick={handleClick} className="Card__name">
-            {" "}
-            {name}{" "}
-          </header>
+        <Link to={`/character/${id}`} style={{ textDecoration: "none" }}>
+          <header className="Card__name"> {name} </header>
         </Link>
         <div className="Card__tags">
           <Tag className="Card__tag">{gender}</Tag>

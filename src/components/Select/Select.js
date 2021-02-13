@@ -1,5 +1,6 @@
 import "./Select.scss";
 import { useState } from "react";
+import { PropTypes } from "prop-types";
 
 const Select = ({ value, handleSelect, options, label }) => {
   const [isOpened, setIsOpened] = useState(false);
@@ -32,6 +33,13 @@ const Select = ({ value, handleSelect, options, label }) => {
       </div>
     </div>
   );
+};
+
+Select.propTypes = {
+  value: PropTypes.string.isRequired,
+  handleSelect: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 export default Select;
